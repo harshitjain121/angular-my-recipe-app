@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-learning-app';
+//TODO : install Augury chrome extension
+
+  loadedFeature: string = 'recipe';
+
+  onNavigate(feature : string){
+    this.loadedFeature = feature;
+  }
+
 }
